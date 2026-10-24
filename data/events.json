@@ -1,0 +1,438 @@
+[
+  {
+    "id": 1792840569041,
+    "title": "Pillai E-Cell Smart Panvel Hackathon",
+    "category": "Technology",
+    "location": "Panvel",
+    "venue": "Dr. K. M. Vasudevan Pillai Campus, New Panvel",
+    "date": "2026-11-30",
+    "time": "09:30",
+    "description": "Civic-tech and smart mobility hackathon challenging engineering students to design real IoT and software prototypes for urban transportation and environmental monitoring.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+    "organizer": "PCE E-Cell & CSI Student Branch",
+    "registrationUrl": "https://devfolio.co",
+    "source": "Campus",
+    "tags": [
+      "Hackathon",
+      "Smart City",
+      "IoT",
+      "Panvel",
+      "Pillai"
+    ],
+    "verified": true,
+    "savedCount": 48,
+    "deadline": "2026-11-28",
+    "lastSyncedAt": "Live tracked just now",
+    "teammateRequests": [
+      {
+        "teamName": "PanvelPioneers",
+        "role": "Hardware / ESP32 C++ Dev",
+        "contact": "t.me/panvel_pioneers"
+      }
+    ]
+  },
+  {
+    "id": 1792840569007,
+    "title": "Luma GenAI & Agentic Workflows Masterclass",
+    "category": "Workshop",
+    "location": "Online",
+    "venue": "Live Zoom Interactive Sandbox & Luma Stage",
+    "date": "2026-11-16",
+    "time": "19:00",
+    "description": "Deep dive into autonomous multi-agent frameworks, tool-calling with Gemini 2.5, and vector search architectures. Hosted by Mumbai AI Guild on Luma.",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Mumbai AI Guild (lu.ma/genai-mumbai)",
+    "registrationUrl": "https://lu.ma/genai-agentic-masterclass",
+    "source": "Luma",
+    "tags": [
+      "Luma",
+      "AI Agents",
+      "Workshop",
+      "Gemini",
+      "Online"
+    ],
+    "verified": true,
+    "savedCount": 91,
+    "deadline": "2026-11-15",
+    "lastSyncedAt": "Live tracked just now",
+    "teammateRequests": []
+  },
+  {
+    "id": 1792840568024,
+    "title": "Devfolio MLH HackDay: Navi Mumbai",
+    "category": "Technology",
+    "location": "Navi Mumbai",
+    "venue": "SIES GST Innovation Auditorium, Nerul",
+    "date": "2026-11-27",
+    "time": "09:00",
+    "description": "Official Major League Hacking (MLH) and Devfolio seasonal hack day. Student hackers build open-source tools with cloud credits, swag kits, and cash prizes.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Devfolio & MLH India",
+    "registrationUrl": "https://devfolio.co/mlh-hackday-navimumbai",
+    "source": "Devfolio",
+    "tags": [
+      "Devfolio",
+      "MLH",
+      "Hackathon",
+      "Coding",
+      "Open Source"
+    ],
+    "verified": true,
+    "savedCount": 64,
+    "deadline": "2026-11-25",
+    "lastSyncedAt": "Live tracked just now",
+    "teammateRequests": [
+      {
+        "teamName": "ByteStorm",
+        "role": "Backend Node.js Engineer",
+        "contact": "wa.me/919876500112"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Navi Mumbai AI & Web3 Hackfest 2026",
+    "category": "Technology",
+    "location": "Navi Mumbai",
+    "venue": "SIES Graduate School of Technology, Sector 5, Nerul, Navi Mumbai",
+    "date": "2026-11-14",
+    "time": "09:30",
+    "description": "24-hour inter-collegiate hackathon hosted at SIES GST Nerul. Students build autonomous AI agents, developer tooling, and decentralized apps with mentorship from Mumbai tech leaders.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+    "organizer": "SIES GST Tech Team & GDG Navi Mumbai",
+    "registrationUrl": "https://unstop.com/hackathons/navi-mumbai-ai-hackfest",
+    "source": "Unstop",
+    "tags": [
+      "AI",
+      "Hackathon",
+      "Web3",
+      "Python",
+      "Full Stack"
+    ],
+    "verified": true,
+    "savedCount": 89,
+    "deadline": "2026-11-12",
+    "lastSyncedAt": "Live tracked 2 hours ago",
+    "teammateRequests": [
+      {
+        "teamName": "NeuralBytes",
+        "role": "Full Stack Dev (React/Node)",
+        "contact": "wa.me/919820011223"
+      },
+      {
+        "teamName": "PromptEngineers",
+        "role": "UI/UX Designer",
+        "contact": "t.me/design_mumbai"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "ETHMumbai Student Builders Jam",
+    "category": "Technology",
+    "location": "Mumbai",
+    "venue": "WeWork Enam Sambhav, BKC, Bandra Kurla Complex, Mumbai",
+    "date": "2026-11-15",
+    "time": "11:00",
+    "description": "Official Devfolio-hosted hacker day for collegiate Web3 builders, smart contract engineers, and zero-knowledge developers. Grants and pool prizes for top three university teams.",
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Devfolio & Ethereum India Guild",
+    "registrationUrl": "https://devfolio.co/ethmumbai-student-jam",
+    "source": "Devfolio",
+    "tags": [
+      "Devfolio",
+      "Web3",
+      "Solidity",
+      "Hackathon",
+      "Smart Contracts"
+    ],
+    "verified": true,
+    "savedCount": 104,
+    "deadline": "2026-11-13",
+    "lastSyncedAt": "Live tracked today",
+    "teammateRequests": [
+      {
+        "teamName": "ZeroKnowledge squad",
+        "role": "Solidity Smart Contract Dev",
+        "contact": "wa.me/919876543210"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Pillai National Robotics & IoT Symposium",
+    "category": "Workshop",
+    "location": "Panvel",
+    "venue": "Pillai College of Engineering, Dr. K. M. Vasudevan Pillai Campus, New Panvel",
+    "date": "2026-11-08",
+    "time": "10:00",
+    "description": "Hands-on engineering symposium featuring line-following robotics arenas, ROS2 micro-controller labs, drone telemetry workshops, and project exhibitions for engineering students.",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80",
+    "organizer": "PCE Robotics & CSI Chapter Panvel",
+    "registrationUrl": "https://unstop.com/workshops/pillai-robotics-iot-symposium",
+    "source": "Unstop",
+    "tags": [
+      "Robotics",
+      "IoT",
+      "Hardware",
+      "Arduino",
+      "Engineering"
+    ],
+    "verified": true,
+    "savedCount": 67,
+    "deadline": "2026-11-06",
+    "lastSyncedAt": "Live tracked today",
+    "teammateRequests": []
+  },
+  {
+    "id": 4,
+    "title": "Luma AI Founders & LLM Agents Demo Night",
+    "category": "Business",
+    "location": "Mumbai",
+    "venue": "Ministry of New, Fort, Heritage District, Mumbai",
+    "date": "2026-11-20",
+    "time": "18:00",
+    "description": "Curated demonstration evening hosted on Luma featuring live lightning talks by five GenAI startups built by college founders across Mumbai, followed by open venture networking.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Mumbai GenAI Collective (lu.ma/mumbai-ai)",
+    "registrationUrl": "https://lu.ma/mumbai-ai-demo-night",
+    "source": "Luma",
+    "tags": [
+      "Luma",
+      "AI Agents",
+      "Startups",
+      "Founders",
+      "GenAI"
+    ],
+    "verified": true,
+    "savedCount": 78,
+    "deadline": "2026-11-19",
+    "lastSyncedAt": "Live tracked 4 hours ago",
+    "teammateRequests": []
+  },
+  {
+    "id": 5,
+    "title": "GDG Navi Mumbai Cloud DevFest & Kaggle Lab",
+    "category": "Technology",
+    "location": "Navi Mumbai",
+    "venue": "CIDCO Exhibition & Convention Centre, Vashi, Navi Mumbai",
+    "date": "2026-11-29",
+    "time": "09:30",
+    "description": "Annual flagship community developer festival powered by Google Developer Groups. Keynotes on Gemini 2.5 models, Vertex AI deployment, and live Kaggle competitive sprint.",
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80",
+    "organizer": "GDG Navi Mumbai Community Platform",
+    "registrationUrl": "https://gdg.community.dev/events/details/google-gdg-navi-mumbai-presents-devfest-2026",
+    "source": "GDG",
+    "tags": [
+      "GDG",
+      "Google Cloud",
+      "Gemini",
+      "AI",
+      "DevFest"
+    ],
+    "verified": true,
+    "savedCount": 142,
+    "deadline": "2026-11-25",
+    "lastSyncedAt": "Live tracked today",
+    "teammateRequests": [
+      {
+        "teamName": "KaggleCrew",
+        "role": "Python / ML Data Analyst",
+        "contact": "wa.me/919988776655"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "IEEE SIES GST State-Level Project Exhibition",
+    "category": "Technology",
+    "location": "Navi Mumbai",
+    "venue": "SIES GST Main Seminar Auditorium, Nerul, Navi Mumbai",
+    "date": "2026-11-17",
+    "time": "10:00",
+    "description": "Annual peer-reviewed technical paper and hardware demonstration symposium organized by the IEEE Student Branch. Over 80 student teams presenting capstone innovations.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80",
+    "organizer": "IEEE Student Branch SIES GST",
+    "registrationUrl": "https://ieee.siesgst.ac.in/symposium-2026",
+    "source": "IEEE",
+    "tags": [
+      "IEEE",
+      "Research",
+      "Hardware",
+      "IoT",
+      "Engineering"
+    ],
+    "verified": true,
+    "savedCount": 56,
+    "deadline": "2026-11-15",
+    "lastSyncedAt": "Live tracked yesterday",
+    "teammateRequests": []
+  },
+  {
+    "id": 7,
+    "title": "Panvel Code & Open Source Saturday Sprint",
+    "category": "Technology",
+    "location": "Panvel",
+    "venue": "Innovation Hub, Old Mumbai-Pune Highway, Panvel",
+    "date": "2026-11-07",
+    "time": "10:30",
+    "description": "Community developer sprint focused on first-time GitHub contributors, TypeScript tools, and open-source packages. Laptop-driven collaborative hacking with pizza provided.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Panvel Developers Meetup",
+    "registrationUrl": "https://meetup.com/panvel-tech-community",
+    "source": "Meetup",
+    "tags": [
+      "Coding",
+      "Open Source",
+      "TypeScript",
+      "Git",
+      "Web Dev"
+    ],
+    "verified": true,
+    "savedCount": 52,
+    "deadline": "2026-11-06",
+    "lastSyncedAt": "Live tracked 1 day ago",
+    "teammateRequests": []
+  },
+  {
+    "id": 8,
+    "title": "IIT Bombay Techfest Regional Autonomous Drone Challenge",
+    "category": "Technology",
+    "location": "Mumbai",
+    "venue": "Gymkhana Grounds, IIT Bombay, Powai, Mumbai",
+    "date": "2026-11-28",
+    "time": "09:00",
+    "description": "Official regional zonal qualifiers for Asia's largest science and technology festival. Collegiate teams compete in autonomous obstacle avoidance and precision payload drop.",
+    "image": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Techfest IIT Bombay Team",
+    "registrationUrl": "https://techfest.org/competitions/drone-challenge",
+    "source": "Campus",
+    "tags": [
+      "Robotics",
+      "Drones",
+      "Competition",
+      "Techfest",
+      "IIT Bombay"
+    ],
+    "verified": true,
+    "savedCount": 119,
+    "deadline": "2026-11-22",
+    "lastSyncedAt": "Live tracked today",
+    "teammateRequests": [
+      {
+        "teamName": "AeroWings",
+        "role": "Embedded C++ Drone Flight Controller",
+        "contact": "t.me/aerowings_iitb"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Kala Ghoda Art After Hours: Indie Digital Creators",
+    "category": "Arts",
+    "location": "Mumbai",
+    "venue": "Kala Ghoda Art District, Fort, Mumbai",
+    "date": "2026-11-12",
+    "time": "17:30",
+    "description": "Evening creative gathering showcasing student generative art installations, interactive projection mapping, indie animations, and experimental music performances.",
+    "image": "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Mumbai Indie Arts Collective",
+    "registrationUrl": "https://eventbrite.com/e/art-after-hours-kala-ghoda",
+    "source": "Eventbrite",
+    "tags": [
+      "Arts",
+      "Generative Art",
+      "Exhibition",
+      "Music",
+      "Culture"
+    ],
+    "verified": true,
+    "savedCount": 45,
+    "deadline": "2026-11-11",
+    "lastSyncedAt": "Live tracked yesterday",
+    "teammateRequests": []
+  },
+  {
+    "id": 10,
+    "title": "Jewel of Navi Mumbai Wetlands Conservation Drive",
+    "category": "Community",
+    "location": "Navi Mumbai",
+    "venue": "Jewel of Navi Mumbai & Palm Beach Promenade, Sector 26, Nerul",
+    "date": "2026-11-15",
+    "time": "07:30",
+    "description": "Inter-college youth eco-initiative uniting 150+ students across Navi Mumbai to protect migratory flamingo wetlands, clear plastic debris, and earn volunteer service certificates.",
+    "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Navi Mumbai Youth Green Forum & NSS Unit",
+    "registrationUrl": "https://forms.gle/EcoDriveNaviMumbai2026",
+    "source": "Campus",
+    "tags": [
+      "Community",
+      "Volunteering",
+      "Environment",
+      "Social Impact",
+      "NSS"
+    ],
+    "verified": true,
+    "savedCount": 71,
+    "deadline": "2026-11-14",
+    "lastSyncedAt": "Live tracked 2 days ago",
+    "teammateRequests": []
+  },
+  {
+    "id": 11,
+    "title": "Cloud Native & Microservices Virtual Bootcamp",
+    "category": "Technology",
+    "location": "Online",
+    "venue": "Google Meet & Live Interactive Terminal",
+    "date": "2026-11-19",
+    "time": "18:30",
+    "description": "Comprehensive practical session covering Docker containers, Kubernetes deployments, and modern CI/CD pipelines with free cloud sandbox credits for registered student attendees.",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Google Cloud Student Club Mumbai",
+    "registrationUrl": "https://unstop.com/workshops/cloud-native-bootcamp",
+    "source": "Unstop",
+    "tags": [
+      "Cloud",
+      "DevOps",
+      "Kubernetes",
+      "Docker",
+      "Online"
+    ],
+    "verified": true,
+    "savedCount": 83,
+    "deadline": "2026-11-18",
+    "lastSyncedAt": "Live tracked today",
+    "teammateRequests": []
+  },
+  {
+    "id": 12,
+    "title": "VJTI Technovanza: Algorithmic CodeSprint 2026",
+    "category": "Technology",
+    "location": "Mumbai",
+    "venue": "Veermata Jijabai Technological Institute (VJTI), Matunga, Mumbai",
+    "date": "2026-11-22",
+    "time": "10:00",
+    "description": "Competitive programming contest hosted during Technovanza. ICPC-style problem solving challenges in C++, Python, and Java with leaderboards and certificates.",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Technovanza VJTI Committee",
+    "registrationUrl": "https://unstop.com/hackathons/vjti-codesprint-2026",
+    "source": "Campus",
+    "tags": [
+      "Coding",
+      "Competitive Programming",
+      "Algorithms",
+      "Technovanza"
+    ],
+    "verified": true,
+    "savedCount": 105,
+    "deadline": "2026-11-21",
+    "lastSyncedAt": "Live tracked 5 hours ago",
+    "teammateRequests": [
+      {
+        "teamName": "DynamicCoders",
+        "role": "Graph Theory / DP specialist",
+        "contact": "wa.me/919920112233"
+      }
+    ]
+  }
+]
