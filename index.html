@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171918">
+  <meta name="description" content="Discover exciting events, workshops, meetups and experiences near you with Eventora.">
+  <title>Eventora | Find Your Next Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-mark">E</span>
+      EVENTORA<span class="logo-dot">.</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#explore">Explore</a>
+      <a href="#categories">Categories</a>
+      <a href="#saved">Saved <span id="saved-count" class="count">0</span></a>
+    </nav>
+
+    <button class="gold-button nav-create" id="open-create">
+      + Create Event
+    </button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR CITY, YOUR COMMUNITY</div>
+        <h1>Life happens<br> <span>out there.</span></h1>
+        <p class="hero-description">
+          Discover experiences, meet your people, and find
+          something worth stepping out for.
+        </p>
+
+        <form class="search-bar" id="search-form">
+          <span class="search-icon">⌕</span>
+          <input id="search-input" type="search"
+            placeholder="Search events, workshops, meetups..."
+            aria-label="Search events">
+          <button class="gold-button" type="submit">Find Events ↗</button>
+        </form>
+
+        <div class="hero-meta">
+          <span>✦ Curated for curious minds</span>
+          <span>● Discover what's happening</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="hero-stamp">
+          <span>MAKE</span>
+          <span>MEMORIES</span>
+          <span class="stamp-star">✳</span>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon">✦</span>
+          <div>
+            <strong>Your next story</strong>
+            <small>Starts with showing up.</small>
+          </div>
+        </div>
+        <span class="hero-decoration">E.</span>
+      </div>
+    </section>
+
+    <section class="discovery section-wrap" id="explore">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE GOOD STUFF</p>
+          <h2>Find your <span>kind of thing.</span></h2>
+        </div>
+        <label class="location-picker">
+          <span>⌖</span>
+          <select id="location-filter" aria-label="Filter by location">
+            <option value="all">All locations</option>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Panvel">Panvel</option>
+            <option value="Online">Online</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="category-list" id="categories">
+        <button class="category active" data-category="All">✳ All events</button>
+        <button class="category" data-category="Technology">⌘ Technology</button>
+        <button class="category" data-category="Workshop">✎ Workshops</button>
+        <button class="category" data-category="Business">↗ Business</button>
+        <button class="category" data-category="Arts">✿ Arts & Culture</button>
+        <button class="category" data-category="Community">♡ Community</button>
+      </div>
+
+      <div class="results-heading">
+        <div>
+          <h3 id="results-title">Upcoming experiences</h3>
+          <p id="results-description">A little something for everyone.</p>
+        </div>
+        <label class="sort-picker">
+          <span>Sort:</span>
+          <select id="sort-filter" aria-label="Sort events">
+            <option value="date">Soonest first</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="event-grid" id="event-grid" aria-live="polite"></div>
+
+      <div class="empty-state hidden" id="empty-state">
+        <span>✳</span>
+        <h3>No events found just yet.</h3>
+        <p>Try another search or choose a different category.</p>
+        <button class="outline-button" id="reset-filters">Clear filters</button>
+      </div>
+    </section>
+
+    <section class="saved-section section-wrap" id="saved">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR LITTLE BLACK BOOK</p>
+          <h2>Saved <span>for later.</span></h2>
+        </div>
+        <p class="saved-intro">The experiences you don't want to miss.</p>
+      </div>
+      <div class="saved-grid" id="saved-grid"></div>
+      <p class="saved-empty" id="saved-empty">
+        Nothing saved yet. Tap the ♡ on an event to keep it here.
+      </p>
+    </section>
+
+    <section class="host-banner">
+      <div>
+        <p class="eyebrow">GOT SOMETHING GOING ON?</p>
+        <h2>Good things deserve<br> <span>an audience.</span></h2>
+        <p>Bring your community together. Your next event starts here.</p>
+      </div>
+      <button class="gold-button" id="banner-create">Host an event ↗</button>
+      <span class="banner-decoration">✳</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo"><span class="logo-mark">E</span> EVENTORA<span class="logo-dot">.</span></a>
+    <p>Find your people. Make a little magic.</p>
+    <span>© 2026 Eventora · Hackathon prototype</span>
+  </footer>
+
+  <dialog id="event-dialog" class="event-dialog">
+    <form id="create-form">
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow">BRING PEOPLE TOGETHER</p>
+          <h2>Create an <span>event.</span></h2>
+        </div>
+        <button type="button" class="close-dialog" id="close-create" aria-label="Close">×</button>
+      </div>
+
+      <label>Event name
+        <input name="title" required maxlength="80" placeholder="e.g. Creative Minds Meetup">
+      </label>
+
+      <div class="form-row">
+        <label>Category
+          <select name="category" required>
+            <option value="Technology">Technology</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Business">Business</option>
+            <option value="Arts">Arts & Culture</option>
+            <option value="Community">Community</option>
+          </select>
+        </label>
+        <label>Location
+          <select name="location" required>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Panvel">Panvel</option>
+            <option value="Online">Online</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Date
+          <input name="date" type="date" required>
+        </label>
+        <label>Time
+          <input name="time" type="time" required>
+        </label>
+      </div>
+
+      <label>Venue or meeting details
+        <input name="venue" required maxlength="100" placeholder="e.g. College auditorium">
+      </label>
+
+      <label>Short description
+        <textarea name="description" required maxlength="240" rows="3"
+          placeholder="What makes this event worth attending?"></textarea>
+      </label>
+
+      <button class="gold-button submit-event" type="submit">Publish event ↗</button>
+      <p class="form-note">Prototype: events are saved in this browser only.</p>
+    </form>
+  </dialog>
+
+  <dialog id="details-dialog" class="event-dialog details-dialog">
+    <div id="details-content"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
