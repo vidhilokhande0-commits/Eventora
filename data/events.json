@@ -1,0 +1,553 @@
+[
+  {
+    "id": 1,
+    "title": "Navi Mumbai AI & Web3 Hackfest 2026",
+    "category": "Technology",
+    "location": "Navi Mumbai",
+    "venue": "SIES Graduate School of Technology, Sector 5, Nerul, Navi Mumbai",
+    "lat": 19.033,
+    "lng": 73.0163,
+    "date": "2026-11-14",
+    "time": "09:30",
+    "endTime": "18:00",
+    "description": "24-hour inter-collegiate hackathon hosted at SIES GST Nerul. Students build autonomous AI agents, developer tooling, and decentralized apps with mentorship from Mumbai tech leaders.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+    "organizer": "SIES GST Tech Team & GDG Navi Mumbai",
+    "registrationUrl": "https://unstop.com/hackathons?searchTerm=Navi+Mumbai",
+    "source": "Unstop",
+    "tags": [
+      "AI",
+      "Hackathon",
+      "Web3",
+      "Python",
+      "Full Stack"
+    ],
+    "verified": true,
+    "savedCount": 95,
+    "viewsCount": 634,
+    "deadline": "2026-11-12",
+    "lastSyncedAt": "Live tracked 2 hours ago",
+    "entryFee": "Free",
+    "prizePool": "₹50,000",
+    "perks": [
+      "Certificates",
+      "Free Food",
+      "Swag Kits",
+      "Internship Opportunities"
+    ],
+    "transitGuide": {
+      "nearestStation": "Nerul Railway Station",
+      "line": "Harbour Line & Trans-Harbour Line",
+      "lastMile": "5-minute auto-rickshaw or 12-minute walk from Nerul East",
+      "tips": "Take Harbour Line direct from CSMT/Vadala or Thane Trans-Harbour local to Nerul."
+    },
+    "teammateRequests": [
+      {
+        "teamName": "NeuralBytes",
+        "role": "Full Stack Dev (React/Node)",
+        "contact": "wa.me/919820011223"
+      },
+      {
+        "teamName": "PromptEngineers",
+        "role": "UI/UX Designer",
+        "contact": "t.me/design_mumbai"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "ETHMumbai Student Builders Jam",
+    "category": "Technology",
+    "location": "Mumbai",
+    "venue": "WeWork Enam Sambhav, BKC, Bandra Kurla Complex, Mumbai",
+    "lat": 19.0662,
+    "lng": 72.8687,
+    "date": "2026-11-15",
+    "time": "11:00",
+    "endTime": "17:00",
+    "description": "Official Devfolio-hosted hacker day for collegiate Web3 builders, smart contract engineers, and zero-knowledge developers. Grants and pool prizes for top three university teams.",
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Devfolio & Ethereum India Guild",
+    "registrationUrl": "https://devfolio.co/hackathons",
+    "source": "Devfolio",
+    "tags": [
+      "Devfolio",
+      "Web3",
+      "Solidity",
+      "Hackathon",
+      "Smart Contracts"
+    ],
+    "verified": true,
+    "savedCount": 112,
+    "viewsCount": 780,
+    "deadline": "2026-11-13",
+    "lastSyncedAt": "Live tracked today",
+    "entryFee": "Free",
+    "prizePool": "₹75,000",
+    "perks": [
+      "Certificates",
+      "Free Refreshments",
+      "Devfolio Badges"
+    ],
+    "transitGuide": {
+      "nearestStation": "Bandra / Kurla Railway Station",
+      "line": "Western Line & Central Line",
+      "lastMile": "10-minute auto-rickshaw or BEST Bus 181/310 to BKC Connector",
+      "tips": "From Bandra East station, take share-auto directly to BKC complex."
+    },
+    "teammateRequests": [
+      {
+        "teamName": "ZeroKnowledge squad",
+        "role": "Solidity Smart Contract Dev",
+        "contact": "wa.me/919876543210"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Pillai National Robotics & IoT Symposium",
+    "category": "Workshop",
+    "location": "Panvel",
+    "venue": "Pillai College of Engineering, Dr. K. M. Vasudevan Pillai Campus, New Panvel",
+    "lat": 18.9894,
+    "lng": 73.1189,
+    "date": "2026-11-08",
+    "time": "10:00",
+    "endTime": "16:30",
+    "description": "Hands-on engineering symposium featuring line-following robotics arenas, ROS2 micro-controller labs, drone telemetry workshops, and project exhibitions for engineering students.",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80",
+    "organizer": "PCE Robotics & CSI Chapter Panvel",
+    "registrationUrl": "https://unstop.com/workshops?searchTerm=Robotics",
+    "source": "Unstop",
+    "tags": [
+      "Robotics",
+      "IoT",
+      "Hardware",
+      "Arduino",
+      "Engineering"
+    ],
+    "verified": true,
+    "savedCount": 72,
+    "viewsCount": 490,
+    "deadline": "2026-11-06",
+    "lastSyncedAt": "Live tracked today",
+    "entryFee": "₹150",
+    "prizePool": "₹25,000",
+    "perks": [
+      "Hardcopy Certificates",
+      "Hardware Kit Access",
+      "Lunch Included"
+    ],
+    "transitGuide": {
+      "nearestStation": "Panvel Terminus / Khandeshwar",
+      "line": "Harbour Line",
+      "lastMile": "7-minute auto-rickshaw (₹25 shared auto) from Panvel Station",
+      "tips": "Alight at Panvel Station. Frequent share-autos available right outside Platform 1."
+    },
+    "teammateRequests": []
+  },
+  {
+    "id": 4,
+    "title": "Luma AI Founders & LLM Agents Demo Night",
+    "category": "Business",
+    "location": "Mumbai",
+    "venue": "Ministry of New, Fort, Heritage District, Mumbai",
+    "lat": 18.9322,
+    "lng": 72.835,
+    "date": "2026-11-20",
+    "time": "18:00",
+    "endTime": "21:00",
+    "description": "Curated demonstration evening hosted on Luma featuring live lightning talks by five GenAI startups built by college founders across Mumbai, followed by open venture networking.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Mumbai GenAI Collective (lu.ma/mumbai-ai)",
+    "registrationUrl": "https://lu.ma/discover",
+    "source": "Luma",
+    "tags": [
+      "Luma",
+      "AI Agents",
+      "Startups",
+      "Founders",
+      "GenAI"
+    ],
+    "verified": true,
+    "savedCount": 85,
+    "viewsCount": 540,
+    "deadline": "2026-11-19",
+    "lastSyncedAt": "Live tracked 4 hours ago",
+    "entryFee": "Free",
+    "prizePool": "Angel Credits",
+    "perks": [
+      "VC Pitch Access",
+      "Cloud Credits",
+      "Coffee & Snacks"
+    ],
+    "transitGuide": {
+      "nearestStation": "CSMT / Churchgate Station",
+      "line": "Central Line & Western Line",
+      "lastMile": "6-minute taxi or 12-minute walk from CSMT heritage exit",
+      "tips": "Walk through Horniman Circle; Ministry of New is located in Kitab Mahal."
+    },
+    "teammateRequests": []
+  },
+  {
+    "id": 5,
+    "title": "GDG Navi Mumbai Cloud DevFest & Kaggle Lab",
+    "category": "Technology",
+    "location": "Navi Mumbai",
+    "venue": "CIDCO Exhibition & Convention Centre, Vashi, Navi Mumbai",
+    "lat": 19.0633,
+    "lng": 72.9984,
+    "date": "2026-11-29",
+    "time": "09:30",
+    "endTime": "17:30",
+    "description": "Annual flagship community developer festival powered by Google Developer Groups. Keynotes on Gemini 2.5 models, Vertex AI deployment, and live Kaggle competitive sprint.",
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80",
+    "organizer": "GDG Navi Mumbai Community Platform",
+    "registrationUrl": "https://gdg.community.dev/events/#/list",
+    "source": "GDG",
+    "tags": [
+      "GDG",
+      "Google Cloud",
+      "Gemini",
+      "AI",
+      "DevFest"
+    ],
+    "verified": true,
+    "savedCount": 158,
+    "viewsCount": 1120,
+    "deadline": "2026-11-25",
+    "lastSyncedAt": "Live tracked today",
+    "entryFee": "Free",
+    "prizePool": "₹45,000",
+    "perks": [
+      "Google DevFest Swag Bags",
+      "Certificates",
+      "Free Buffet Lunch"
+    ],
+    "transitGuide": {
+      "nearestStation": "Vashi Railway Station",
+      "line": "Harbour Line & Trans-Harbour Line",
+      "lastMile": "5-minute walk from Vashi Station Sector 30A exit",
+      "tips": "Right opposite Inorbit Mall and Vashi Railway Station complex."
+    },
+    "teammateRequests": [
+      {
+        "teamName": "KaggleCrew",
+        "role": "Python / ML Data Analyst",
+        "contact": "wa.me/919988776655"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "IEEE SIES GST State-Level Project Exhibition",
+    "category": "Technology",
+    "location": "Navi Mumbai",
+    "venue": "SIES GST Main Seminar Auditorium, Nerul, Navi Mumbai",
+    "lat": 19.033,
+    "lng": 73.0163,
+    "date": "2026-11-17",
+    "time": "10:00",
+    "endTime": "16:00",
+    "description": "Annual peer-reviewed technical paper and hardware demonstration symposium organized by the IEEE Student Branch. Over 80 student teams presenting capstone innovations.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80",
+    "organizer": "IEEE Student Branch SIES GST",
+    "registrationUrl": "https://unstop.com/competitions?searchTerm=IEEE",
+    "source": "IEEE",
+    "tags": [
+      "IEEE",
+      "Research",
+      "Hardware",
+      "IoT",
+      "Engineering"
+    ],
+    "verified": true,
+    "savedCount": 61,
+    "viewsCount": 410,
+    "deadline": "2026-11-15",
+    "lastSyncedAt": "Live tracked yesterday",
+    "entryFee": "₹100",
+    "prizePool": "₹20,000",
+    "perks": [
+      "IEEE Publication Certificate",
+      "Mementoes",
+      "Refreshments"
+    ],
+    "transitGuide": {
+      "nearestStation": "Nerul Railway Station",
+      "line": "Harbour Line",
+      "lastMile": "5-minute auto or 10-minute walk from Sector 5 Nerul",
+      "tips": "Near Dr. D.Y. Patil Stadium corridor."
+    },
+    "teammateRequests": []
+  },
+  {
+    "id": 7,
+    "title": "Panvel Code & Open Source Saturday Sprint",
+    "category": "Technology",
+    "location": "Panvel",
+    "venue": "Innovation Hub, Old Mumbai-Pune Highway, Panvel",
+    "lat": 18.992,
+    "lng": 73.123,
+    "date": "2026-11-07",
+    "time": "10:30",
+    "endTime": "15:00",
+    "description": "Community developer sprint focused on first-time GitHub contributors, TypeScript tools, and open-source packages. Laptop-driven collaborative hacking with pizza provided.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Panvel Developers Meetup",
+    "registrationUrl": "https://www.meetup.com/find/?keywords=coding&location=in--Mumbai",
+    "source": "Meetup",
+    "tags": [
+      "Coding",
+      "Open Source",
+      "TypeScript",
+      "Git",
+      "Web Dev"
+    ],
+    "verified": true,
+    "savedCount": 55,
+    "viewsCount": 380,
+    "deadline": "2026-11-06",
+    "lastSyncedAt": "Live tracked 1 day ago",
+    "entryFee": "Free",
+    "prizePool": "GitHub Goodies",
+    "perks": [
+      "Open Source Stickers",
+      "Free Pizza",
+      "Mentorship"
+    ],
+    "transitGuide": {
+      "nearestStation": "Panvel Station",
+      "line": "Harbour Line",
+      "lastMile": "8-minute auto along Old Mumbai-Pune highway",
+      "tips": "Easy accessibility via Panvel city bus or direct auto."
+    },
+    "teammateRequests": []
+  },
+  {
+    "id": 8,
+    "title": "IIT Bombay Techfest Regional Autonomous Drone Challenge",
+    "category": "Technology",
+    "location": "Mumbai",
+    "venue": "Gymkhana Grounds, IIT Bombay, Powai, Mumbai",
+    "lat": 19.1334,
+    "lng": 72.9133,
+    "date": "2026-11-28",
+    "time": "09:00",
+    "endTime": "18:00",
+    "description": "Official regional zonal qualifiers for Asia's largest science and technology festival. Collegiate teams compete in autonomous obstacle avoidance and precision payload drop.",
+    "image": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Techfest IIT Bombay Team",
+    "registrationUrl": "https://techfest.org/competitions",
+    "source": "Campus",
+    "tags": [
+      "Robotics",
+      "Drones",
+      "Competition",
+      "Techfest",
+      "IIT Bombay"
+    ],
+    "verified": true,
+    "savedCount": 128,
+    "viewsCount": 950,
+    "deadline": "2026-11-22",
+    "lastSyncedAt": "Live tracked today",
+    "entryFee": "Free",
+    "prizePool": "₹1,00,000",
+    "perks": [
+      "IIT Bombay Techfest Certificate",
+      "Trophies",
+      "National Final Pass"
+    ],
+    "transitGuide": {
+      "nearestStation": "Kanjurmarg Railway Station",
+      "line": "Central Line",
+      "lastMile": "10-minute auto-rickshaw to IIT Bombay Main Gate",
+      "tips": "Take Central Line local to Kanjurmarg, exit West, take share auto to IIT Main Gate."
+    },
+    "teammateRequests": [
+      {
+        "teamName": "AeroWings",
+        "role": "Embedded C++ Drone Flight Controller",
+        "contact": "t.me/aerowings_iitb"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Kala Ghoda Art After Hours: Indie Digital Creators",
+    "category": "Arts",
+    "location": "Mumbai",
+    "venue": "Kala Ghoda Art District, Fort, Mumbai",
+    "lat": 18.9298,
+    "lng": 72.8333,
+    "date": "2026-11-12",
+    "time": "17:30",
+    "endTime": "21:30",
+    "description": "Evening creative gathering showcasing student generative art installations, interactive projection mapping, indie animations, and experimental music performances.",
+    "image": "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Mumbai Indie Arts Collective",
+    "registrationUrl": "https://unstop.com/cultural-events",
+    "source": "Eventbrite",
+    "tags": [
+      "Arts",
+      "Generative Art",
+      "Exhibition",
+      "Music",
+      "Culture"
+    ],
+    "verified": true,
+    "savedCount": 49,
+    "viewsCount": 320,
+    "deadline": "2026-11-11",
+    "lastSyncedAt": "Live tracked yesterday",
+    "entryFee": "Free",
+    "prizePool": "Exhibition Grants",
+    "perks": [
+      "Artist Badges",
+      "Portfolio Review",
+      "Live Networking"
+    ],
+    "transitGuide": {
+      "nearestStation": "Churchgate / CSMT Station",
+      "line": "Western & Central Line",
+      "lastMile": "10-minute walk towards Jehangir Art Gallery",
+      "tips": "Pleasant heritage walk through Fort and Oval Maidan."
+    },
+    "teammateRequests": []
+  },
+  {
+    "id": 10,
+    "title": "Jewel of Navi Mumbai Wetlands Conservation Drive",
+    "category": "Community",
+    "location": "Navi Mumbai",
+    "venue": "Jewel of Navi Mumbai & Palm Beach Promenade, Sector 26, Nerul",
+    "lat": 19.026,
+    "lng": 73.018,
+    "date": "2026-11-15",
+    "time": "07:30",
+    "endTime": "11:00",
+    "description": "Inter-college youth eco-initiative uniting 150+ students across Navi Mumbai to protect migratory flamingo wetlands, clear plastic debris, and earn volunteer service certificates.",
+    "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Navi Mumbai Youth Green Forum & NSS Unit",
+    "registrationUrl": "https://unstop.com/opportunity/volunteer-internships",
+    "source": "Campus",
+    "tags": [
+      "Community",
+      "Volunteering",
+      "Environment",
+      "Social Impact",
+      "NSS"
+    ],
+    "verified": true,
+    "savedCount": 78,
+    "viewsCount": 510,
+    "deadline": "2026-11-14",
+    "lastSyncedAt": "Live tracked 2 days ago",
+    "entryFee": "Free",
+    "prizePool": "Community Awards",
+    "perks": [
+      "NSS Volunteer Hours Certificate",
+      "Eco-Friendly T-Shirt",
+      "Breakfast"
+    ],
+    "transitGuide": {
+      "nearestStation": "Seawoods Grand Central / Nerul Station",
+      "line": "Harbour Line",
+      "lastMile": "5-minute auto down Palm Beach Road",
+      "tips": "Alight at Seawoods Darave station or Nerul station East."
+    },
+    "teammateRequests": []
+  },
+  {
+    "id": 11,
+    "title": "Cloud Native & Microservices Virtual Bootcamp",
+    "category": "Technology",
+    "location": "Online",
+    "venue": "Google Meet & Live Interactive Terminal",
+    "lat": 19.04,
+    "lng": 73.02,
+    "date": "2026-11-19",
+    "time": "18:30",
+    "endTime": "21:00",
+    "description": "Comprehensive practical session covering Docker containers, Kubernetes deployments, and modern CI/CD pipelines with free cloud sandbox credits for registered student attendees.",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Google Cloud Student Club Mumbai",
+    "registrationUrl": "https://unstop.com/workshops?searchTerm=Cloud",
+    "source": "Unstop",
+    "tags": [
+      "Cloud",
+      "DevOps",
+      "Kubernetes",
+      "Docker",
+      "Online"
+    ],
+    "verified": true,
+    "savedCount": 91,
+    "viewsCount": 630,
+    "deadline": "2026-11-18",
+    "lastSyncedAt": "Live tracked today",
+    "entryFee": "Free",
+    "prizePool": "Cloud Sandbox Credits",
+    "perks": [
+      "$50 Cloud Credits",
+      "Hands-on Lab Certificate",
+      "Slide Decks"
+    ],
+    "transitGuide": {
+      "nearestStation": "Virtual Access (Anywhere)",
+      "line": "Google Meet / Discord",
+      "lastMile": "Zero transit needed",
+      "tips": "Join via web browser on laptop with stable internet connection."
+    },
+    "teammateRequests": []
+  },
+  {
+    "id": 12,
+    "title": "VJTI Technovanza: Algorithmic CodeSprint 2026",
+    "category": "Technology",
+    "location": "Mumbai",
+    "venue": "Veermata Jijabai Technological Institute (VJTI), Matunga, Mumbai",
+    "lat": 19.0222,
+    "lng": 72.8561,
+    "date": "2026-11-22",
+    "time": "10:00",
+    "endTime": "17:00",
+    "description": "Competitive programming contest hosted during Technovanza. ICPC-style problem solving challenges in C++, Python, and Java with leaderboards and certificates.",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
+    "organizer": "Technovanza VJTI Committee",
+    "registrationUrl": "https://unstop.com/hackathons?searchTerm=VJTI",
+    "source": "Campus",
+    "tags": [
+      "Coding",
+      "Competitive Programming",
+      "Algorithms",
+      "Technovanza"
+    ],
+    "verified": true,
+    "savedCount": 118,
+    "viewsCount": 820,
+    "deadline": "2026-11-21",
+    "lastSyncedAt": "Live tracked 5 hours ago",
+    "entryFee": "Free",
+    "prizePool": "₹40,000",
+    "perks": [
+      "VJTI Technovanza Winners Trophy",
+      "Merit Certificates",
+      "Goodies"
+    ],
+    "transitGuide": {
+      "nearestStation": "Matunga Station / Wadala Road",
+      "line": "Central Line & Harbour Line",
+      "lastMile": "6-minute walk from Matunga East or 8-minute walk from Wadala Rd",
+      "tips": "Exit Matunga East towards Five Gardens; VJTI main campus is directly ahead."
+    },
+    "teammateRequests": [
+      {
+        "teamName": "DynamicCoders",
+        "role": "Graph Theory / DP specialist",
+        "contact": "wa.me/919920112233"
+      }
+    ]
+  }
+]

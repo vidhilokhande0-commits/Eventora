@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171918">
+  <title>Eventora — Discover What's Happening Around You</title>
+  <meta name="description" content="Discover nearby hackathons, workshops, college festivals, and tech meetups in Navi Mumbai, Mumbai, Panvel, and online with AI Smart Match recommendations.">
+  <meta property="og:title" content="Eventora — Discover What's Happening Around You">
+  <meta property="og:description" content="Discover nearby hackathons, workshops, college festivals, and tech meetups in Navi Mumbai, Mumbai, Panvel, and online with AI Smart Match recommendations.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- SCHEMA.ORG EVENT & DISCOVERY STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventSeries",
+    "name": "Eventora Hyperlocal Campus Discovery",
+    "description": "Inter-collegiate hackathons, workshops, tech summits and cultural meetups in Navi Mumbai, Panvel and Mumbai.",
+    "location": {
+      "@type": "Place",
+      "name": "Navi Mumbai, Panvel & Mumbai Colleges",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Navi Mumbai",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- RESILIENT OFFLINE & STATUS BANNER -->
+  <div id="offline-banner" class="offline-banner hidden">
+    <span>⚡ <strong>Offline Mode:</strong> Viewing verified campus cache. Automatic re-sync active.</span>
+  </div>
+
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-mark">E</span>
+      EVENTORA<span class="logo-dot">.</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#explore">Explore</a>
+      <a href="#preferences">Smart Match</a>
+      <a href="#saved">Saved & Calendar <span id="saved-count" class="count">0</span></a>
+      <button type="button" class="nav-btn-link" id="open-host-insights">Host Insights ↗</button>
+    </nav>
+
+    <div class="nav-actions">
+      <button type="button" class="xp-pill-nav" id="open-xp-modal" title="Your Community XP & Level">
+        <span class="xp-flame">🔥</span>
+        <span id="nav-xp-badge">Lvl 1 · 150 XP</span>
+      </button>
+
+      <button class="gold-button nav-create" id="open-create">
+        + Create Event
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR CAMPUS, YOUR COMMUNITY</div>
+        <h1>Life happens<br> <span>out there.</span></h1>
+        <p class="hero-description">
+          Discover college hackathons, AI workshops, startup mixers, and cultural meetups
+          around Navi Mumbai, Panvel, Mumbai, and Online.
+        </p>
+
+        <form class="search-bar" id="search-form">
+          <span class="search-icon">⌕</span>
+          <input id="search-input" type="search"
+            placeholder="Search AI hackathons, college workshops, robotics..."
+            aria-label="Search events">
+          <button class="gold-button" type="submit">Find Events ↗</button>
+        </form>
+
+        <!-- INSTANT QUICK-SEARCH DISCOVERY TAGS -->
+        <div class="search-quick-tags" id="search-quick-tags">
+          <span class="quick-tags-label">Trending Now:</span>
+          <button type="button" class="quick-tag-chip" data-query="hackathon">🔥 Hackathons</button>
+          <button type="button" class="quick-tag-chip" data-query="ai">🤖 GenAI & LLMs</button>
+          <button type="button" class="quick-tag-chip" data-query="free">🎟 Free Entry</button>
+          <button type="button" class="quick-tag-chip" data-query="₹">🏆 Cash Prizes</button>
+          <button type="button" class="quick-tag-chip" data-query="sies">🎓 SIES GST Nerul</button>
+          <button type="button" class="quick-tag-chip" data-query="pillai">🏛 Pillai Panvel</button>
+          <button type="button" class="quick-tag-chip" data-query="vjti">⌘ VJTI Matunga</button>
+        </div>
+
+        <div class="hero-meta">
+          <span>✦ Curated for students & creators</span>
+          <span>● Smart Match AI Engine</span>
+          <span>🚆 Hyperlocal Transit Guides</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="hero-stamp">
+          <span>MAKE</span>
+          <span>MEMORIES</span>
+          <span class="stamp-star">✳</span>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon">✦</span>
+          <div>
+            <strong>Your next story</strong>
+            <small>Starts with showing up.</small>
+          </div>
+        </div>
+        <span class="hero-decoration">E.</span>
+      </div>
+    </section>
+
+    <!-- HOW TO USE / HOW IT WORKS SECTION -->
+    <section class="how-it-works section-wrap" id="how-it-works">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">HOW TO USE EVENTORA</p>
+          <h2>Three steps to <span>showing up.</span></h2>
+        </div>
+        <p class="saved-intro">Built for students and organizers to discover real opportunities without WhatsApp chaos.</p>
+      </div>
+
+      <div class="how-grid">
+        <div class="how-card">
+          <div class="step-header">
+            <span class="step-num">01</span>
+            <div class="step-icon">⌖</div>
+          </div>
+          <h3>Pick Campus & Passion</h3>
+          <p>
+            Choose your corridor (Navi Mumbai, Panvel, Mumbai, or Online) and toggle your passion chips—AI, Hackathons, Coding, or Startups. Instant zero-friction access.
+          </p>
+        </div>
+
+        <div class="how-card">
+          <div class="step-header">
+            <span class="step-num">02</span>
+            <div class="step-icon">✦</div>
+          </div>
+          <h3>Audit Smart Match %</h3>
+          <p>
+            Eventora calculates a transparent 0–100% Affinity Score for every event based on distance, topic alignment, and verified college accreditation.
+          </p>
+        </div>
+
+        <div class="how-card">
+          <div class="step-header">
+            <span class="step-num">03</span>
+            <div class="step-icon">⚡</div>
+          </div>
+          <h3>1-Click Fast Register & Pass</h3>
+          <p>
+            Register directly on Eventora without broken links, claim your Digital Fast-Pass with gate entry QR, and sync with your Google Calendar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="discovery section-wrap" id="explore">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE GOOD STUFF</p>
+          <h2>Find your <span>kind of thing.</span></h2>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <label class="verified-filter-label" title="Show only events verified by college clubs or official platforms">
+            <input type="checkbox" id="verified-only-filter">
+            <span>✓ Verified Campus Only</span>
+          </label>
+
+          <label class="verified-filter-label" title="Show only events with free entry">
+            <input type="checkbox" id="free-only-filter">
+            <span>🎟 Free Entry</span>
+          </label>
+
+          <label class="verified-filter-label" title="Show only events with cash prizes or grants">
+            <input type="checkbox" id="prize-only-filter">
+            <span>🏆 Cash Prizes</span>
+          </label>
+
+          <label class="location-picker">
+            <span>⌖</span>
+            <select id="location-filter" aria-label="Filter by location">
+              <option value="all">All locations</option>
+              <option value="Navi Mumbai">Navi Mumbai</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Panvel">Panvel</option>
+              <option value="Online">Online</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <!-- CAMPUS CORRIDOR QUICK SELECTOR -->
+      <div class="corridor-chips-bar" id="corridor-chips">
+        <span class="corridor-label">🏫 College Corridor:</span>
+        <button type="button" class="corridor-chip active" data-corridor="all">All Campuses</button>
+        <button type="button" class="corridor-chip" data-corridor="sies">SIES GST (Nerul)</button>
+        <button type="button" class="corridor-chip" data-corridor="pillai">Pillai (Panvel)</button>
+        <button type="button" class="corridor-chip" data-corridor="vjti">VJTI (Matunga)</button>
+        <button type="button" class="corridor-chip" data-corridor="iit">IIT Bombay (Powai)</button>
+        <button type="button" class="corridor-chip" data-corridor="terna">Terna (Nerul West)</button>
+        <button type="button" class="corridor-chip" data-corridor="vashi">CIDCO / Vashi</button>
+      </div>
+
+      <!-- PLATFORM PULSE & VERIFICATION METRICS -->
+      <div class="stats-pulse-bar" id="stats-pulse">
+        <div class="pulse-stat">
+          <span class="pulse-val" id="stat-total-events">12</span>
+          <span class="pulse-label">Upcoming Events</span>
+        </div>
+        <div class="pulse-stat">
+          <span class="pulse-val" id="stat-verified-events">10</span>
+          <span class="pulse-label">✓ Verified Campus</span>
+        </div>
+        <div class="pulse-stat">
+          <span class="pulse-val" id="stat-community-saves">850+</span>
+          <span class="pulse-label">Student RSVPs</span>
+        </div>
+        <div class="pulse-stat">
+          <span class="pulse-val" id="stat-teammate-openings">4</span>
+          <span class="pulse-label">Teammate Openings</span>
+        </div>
+      </div>
+
+      <!-- LIVE DAILY TRACKER SYNC BANNER -->
+      <div class="live-sync-wrap">
+        <div class="live-sync-beacon">
+          <span class="green-dot"></span>
+          <span>Live Tracker: <strong>Devfolio · Luma · GDG · IEEE · Unstop · College Portals</strong></span>
+        </div>
+        <button type="button" class="sync-now-button" id="btn-sync-live" title="Check genuine platforms for newly announced events">
+          ⚡ Sync Live Feeds
+        </button>
+      </div>
+
+      <!-- SMART MATCH PREFERENCES BAR -->
+      <div class="preferences-container" id="preferences">
+        <div class="preferences-header">
+          <div class="preferences-title">
+            <span>✦</span> Smart Match Interests Profile
+          </div>
+          <span style="font-size:11px;color:var(--muted)">
+            Select your passions to calculate custom 0–100% affinity scores
+          </span>
+        </div>
+        <div class="preferences-chips" id="interest-chips">
+          <button type="button" class="pref-chip active" data-interest="ai">🤖 AI & GenAI</button>
+          <button type="button" class="pref-chip active" data-interest="hackathon">💻 Hackathons</button>
+          <button type="button" class="pref-chip" data-interest="coding">⌨ Coding & Web3</button>
+          <button type="button" class="pref-chip" data-interest="startup">🚀 Startups & Pitching</button>
+          <button type="button" class="pref-chip" data-interest="workshop">✎ Design & Workshops</button>
+          <button type="button" class="pref-chip" data-interest="arts">✿ Arts & Culture</button>
+          <button type="button" class="pref-chip" data-interest="community">♡ Social & Meetups</button>
+        </div>
+      </div>
+
+      <div class="category-list" id="categories">
+        <button class="category active" data-category="All">✳ All events</button>
+        <button class="category" data-category="Technology">⌘ Technology</button>
+        <button class="category" data-category="Workshop">✎ Workshops</button>
+        <button class="category" data-category="Business">↗ Business</button>
+        <button class="category" data-category="Arts">✿ Arts & Culture</button>
+        <button class="category" data-category="Community">♡ Community</button>
+      </div>
+
+      <!-- VIEW MODE BAR: GRID VS PULSE MAP -->
+      <div class="view-mode-bar">
+        <div class="view-toggle-group">
+          <button type="button" class="view-btn active" id="btn-view-grid">
+            <span>▦</span> Grid View
+          </button>
+          <button type="button" class="view-btn" id="btn-view-map">
+            <span>⌖</span> Live Event Pulse Map <span class="map-live-dot"></span>
+          </button>
+        </div>
+        <div class="map-legend-pills">
+          <span class="legend-pill"><span class="legend-dot tech"></span> Tech & Hackathons</span>
+          <span class="legend-pill"><span class="legend-dot workshop"></span> Workshops</span>
+          <span class="legend-pill"><span class="legend-dot college"></span> Verified Campuses</span>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE LEAFLET EVENT PULSE MAP -->
+      <div id="event-pulse-map-container" class="map-view-wrapper hidden">
+        <div class="map-header-bar">
+          <div>
+            <h4>Navi Mumbai · Panvel · Mumbai Campus Pulse Map</h4>
+            <p>Real-time geographic clusters of tech summits, college hackathons, and student mixers</p>
+          </div>
+          <div class="map-header-actions">
+            <button type="button" class="map-control-btn" id="btn-recenter-map">⌖ Recenter Campuses</button>
+          </div>
+        </div>
+        <div id="event-map" class="event-map-el" role="region" aria-label="Interactive Event Pulse Map"></div>
+      </div>
+
+      <div class="results-heading" id="results-bar">
+        <div>
+          <h3 id="results-title">Upcoming experiences</h3>
+          <p id="results-description">A little something for everyone.</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <label class="sort-picker">
+            <span>Timeframe:</span>
+            <select id="timeframe-filter" aria-label="Filter by timeframe">
+              <option value="all">All Dates</option>
+              <option value="weekend">This Weekend</option>
+              <option value="7days">Next 7 Days</option>
+            </select>
+          </label>
+          <label class="sort-picker">
+            <span>Sort:</span>
+            <select id="sort-filter" aria-label="Sort events">
+              <option value="match">Highest Match % ✦</option>
+              <option value="date">Soonest date</option>
+              <option value="popular">Most popular (buzz)</option>
+              <option value="name">Name A–Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="event-grid" id="event-grid" aria-live="polite"></div>
+
+      <div class="empty-state hidden" id="empty-state">
+        <span>✳</span>
+        <h3>No events found just yet.</h3>
+        <p>Try another search or choose a different category or location.</p>
+        <button class="outline-button" id="reset-filters">Clear filters</button>
+      </div>
+    </section>
+
+    <section class="saved-section section-wrap" id="saved">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR LITTLE BLACK BOOK</p>
+          <h2>Saved & <span>Schedule.</span></h2>
+        </div>
+        <div class="saved-view-toggle">
+          <button type="button" class="view-btn active" id="btn-saved-cards">▦ Saved Events (<span id="saved-cards-count">0</span>)</button>
+          <button type="button" class="view-btn" id="btn-saved-calendar">📅 My Calendar & Conflicts</button>
+        </div>
+      </div>
+      <p class="saved-intro">The hackathons and experiences you don't want to miss. Tap Fast-Pass on any saved event for instant QR check-in!</p>
+
+      <!-- SAVED CARDS VIEW -->
+      <div id="saved-cards-wrapper">
+        <div class="saved-grid" id="saved-grid"></div>
+        <p class="saved-empty" id="saved-empty">
+          Nothing saved yet. Tap the ♡ on any event to bookmark it here and claim your Digital Fast-Pass.
+        </p>
+      </div>
+
+      <!-- PERSONALIZED CALENDAR & SCHEDULE CONFLICT DETECTOR -->
+      <div class="calendar-wrapper hidden" id="calendar-wrapper">
+        <div class="calendar-header-banner">
+          <div>
+            <h3>📅 Personalized Campus Calendar</h3>
+            <p>Smart schedule conflict & travel buffer alerts between Panvel, Navi Mumbai & Mumbai</p>
+          </div>
+          <button type="button" class="gold-button btn-export-cal" id="btn-export-ical" title="Download standard .ics file for Google Calendar, Apple Calendar or Outlook">
+            ⚡ Export to .ICS Calendar
+          </button>
+        </div>
+
+        <!-- Dynamic conflict alert box -->
+        <div id="conflict-alert-box" class="conflict-alert-box hidden"></div>
+
+        <!-- Timeline Schedule Grid -->
+        <div id="calendar-timeline" class="calendar-timeline"></div>
+      </div>
+    </section>
+
+    <section class="host-banner">
+      <div>
+        <p class="eyebrow">ORGANIZING A HACKATHON OR FEST?</p>
+        <h2>Good events deserve<br> <span>a packed house.</span></h2>
+        <p>Reach passionate students across Navi Mumbai, Mumbai, and Panvel colleges.</p>
+      </div>
+      <div class="host-banner-btns">
+        <button class="gold-button" id="banner-create">Publish an event ↗</button>
+        <button class="outline-button" id="banner-insights">Host Reach Analytics 📊</button>
+      </div>
+      <span class="banner-decoration">✳</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo"><span class="logo-mark">E</span> EVENTORA<span class="logo-dot">.</span></a>
+    <p>Find your people. Built for students, builders & creators in Navi Mumbai, Panvel & Mumbai.</p>
+    <span>© 2026 Eventora · Hyperlocal Event Discovery & Community Engagement</span>
+  </footer>
+
+  <!-- CREATE EVENT DIALOG WITH WHATSAPP-TO-EVENT AI PARSER -->
+  <dialog id="event-dialog" class="event-dialog">
+    <form id="create-form">
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow">BRING PEOPLE TOGETHER</p>
+          <h2>Create an <span>event.</span></h2>
+        </div>
+        <button type="button" class="close-dialog" id="close-create" aria-label="Close">×</button>
+      </div>
+
+      <!-- WHATSAPP / CIRCULAR QUICK-FILL -->
+      <div class="quick-import-card">
+        <div class="quick-import-header" id="toggle-quick-import">
+          <h4><span>⚡</span> WhatsApp-to-Event AI Parser 2.0</h4>
+          <span style="font-size:11px;color:var(--gold);cursor:pointer">1-Click Auto-Fill</span>
+        </div>
+        <textarea id="quick-import-text" class="quick-import-textarea"
+          placeholder="Paste raw WhatsApp forward or college notice (e.g. 'GDG Navi Mumbai Hackathon at SIES GST Nerul on 14 Nov at 9:30 AM! Free entry, prizes worth ₹50,000. Register at unstop.com/hackathons')..."></textarea>
+
+        <div class="quick-samples">
+          <span class="quick-samples-label">Test with real notice:</span>
+          <button type="button" class="btn-sample-notice" data-sample="sies">SIES GST Hackathon</button>
+          <button type="button" class="btn-sample-notice" data-sample="pillai">Pillai Panvel Summit</button>
+          <button type="button" class="btn-sample-notice" data-sample="vjti">VJTI AI Workshop</button>
+        </div>
+
+        <button type="button" class="gold-button" id="btn-parse-notice" style="width:100%;padding:8px 14px;font-size:11px;margin-top:8px">
+          ⚡ Auto-Fill Event Details with Parser
+        </button>
+      </div>
+
+      <label>Event title
+        <input name="title" id="form-title" required maxlength="100" placeholder="e.g. Navi Mumbai GenAI Hackathon">
+      </label>
+
+      <div class="form-row">
+        <label>Category
+          <select name="category" id="form-category" required>
+            <option value="Technology">Technology</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Business">Business</option>
+            <option value="Arts">Arts & Culture</option>
+            <option value="Community">Community</option>
+          </select>
+        </label>
+        <label>Location
+          <select name="location" id="form-location" required>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Panvel">Panvel</option>
+            <option value="Online">Online</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Date
+          <input name="date" id="form-date" type="date" required>
+        </label>
+        <label>Time
+          <input name="time" id="form-time" type="time" required>
+        </label>
+      </div>
+
+      <label>Venue or college campus
+        <input name="venue" id="form-venue" required maxlength="120" placeholder="e.g. SIES GST Auditorium, Nerul">
+      </label>
+
+      <div class="form-row">
+        <label>Entry Fee (e.g. Free or ₹100)
+          <input name="entryFee" id="form-fee" maxlength="30" placeholder="Free">
+        </label>
+        <label>Cash Prize / Rewards (e.g. ₹50,000)
+          <input name="prizePool" id="form-prize" maxlength="40" placeholder="e.g. ₹50,000">
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Organizer / Student Club
+          <input name="organizer" id="form-organizer" maxlength="60" placeholder="e.g. GDG Navi Mumbai">
+        </label>
+        <label>Registration Link (Unstop / Devfolio / Luma)
+          <input name="registrationUrl" id="form-reg-url" type="url" placeholder="https://unstop.com/hackathons">
+        </label>
+      </div>
+
+      <label>Short description
+        <textarea name="description" id="form-description" required maxlength="500" rows="3"
+          placeholder="What makes this event worth attending?"></textarea>
+      </label>
+
+      <button class="gold-button submit-event" type="submit">Publish to Eventora ↗</button>
+      <p class="form-note">Your event will be saved to the database with geocodes, transit guide, and visible to all students.</p>
+    </form>
+  </dialog>
+
+  <!-- EVENT DETAILS DIALOG WITH TRANSIT GUIDE & FAST PASS -->
+  <dialog id="details-dialog" class="event-dialog details-dialog">
+    <div id="details-content"></div>
+  </dialog>
+
+  <!-- FIX 404: OFFICIAL IN-APP REGISTRATION GATEWAY DIALOG -->
+  <dialog id="register-portal-dialog" class="event-dialog register-portal-dialog">
+    <div class="dialog-heading">
+      <div>
+        <p class="eyebrow">OFFICIAL CAMPUS REGISTRATION GATEWAY</p>
+        <h2>Register for <span>Event.</span></h2>
+      </div>
+      <button type="button" class="close-dialog" id="close-reg-dialog" aria-label="Close">×</button>
+    </div>
+    <div id="register-portal-content" class="reg-portal-modal-body"></div>
+  </dialog>
+
+  <!-- AMBASSADOR OUTREACH & CLASS WHATSAPP SHARE MODAL -->
+  <dialog id="outreach-dialog" class="event-dialog outreach-dialog">
+    <div class="dialog-heading">
+      <div>
+        <p class="eyebrow">SPREAD THE WORD · 10X EVENT REACH</p>
+        <h2>Class & Community <span>Broadcast.</span></h2>
+      </div>
+      <button type="button" class="close-dialog" id="close-outreach-dialog" aria-label="Close">×</button>
+    </div>
+    <div id="outreach-content" class="outreach-modal-body"></div>
+  </dialog>
+
+  <!-- TRANSPARENCY EXPLANATION DIALOG -->
+  <dialog id="match-dialog" class="event-dialog details-dialog">
+    <div id="match-content"></div>
+  </dialog>
+
+  <!-- TEAMMATE RADAR DIALOG -->
+  <dialog id="teammate-dialog" class="event-dialog details-dialog">
+    <div id="teammate-content"></div>
+  </dialog>
+
+  <!-- COMMUNITY XP & REWARDS DIALOG -->
+  <dialog id="xp-dialog" class="event-dialog xp-dialog">
+    <div class="dialog-heading">
+      <div>
+        <p class="eyebrow">GAMIFIED COMMUNITY ENGAGEMENT</p>
+        <h2>Your XP & <span>Milestones.</span></h2>
+      </div>
+      <button type="button" class="close-dialog" id="close-xp-dialog" aria-label="Close">×</button>
+    </div>
+    <div id="xp-content" class="xp-modal-body"></div>
+  </dialog>
+
+  <!-- VERIFIED DIGITAL STUDENT EVENT FAST-PASS (QR TICKET) -->
+  <dialog id="pass-dialog" class="event-dialog pass-dialog">
+    <div class="dialog-heading">
+      <div>
+        <p class="eyebrow">EVENTORA DIGITAL EVENT PASS</p>
+        <h2>Fast-Pass <span>Ticket.</span></h2>
+      </div>
+      <button type="button" class="close-dialog" id="close-pass-dialog" aria-label="Close">×</button>
+    </div>
+    <div id="pass-content" class="pass-modal-body"></div>
+  </dialog>
+
+  <!-- COMMUNITY LEADER & PIONEER CERTIFICATE -->
+  <dialog id="certificate-dialog" class="event-dialog cert-dialog">
+    <div class="dialog-heading">
+      <div>
+        <p class="eyebrow">EVENTORA COMMUNITY CREDENTIAL</p>
+        <h2>Leader <span>Certificate.</span></h2>
+      </div>
+      <button type="button" class="close-dialog" id="close-cert-dialog" aria-label="Close">×</button>
+    </div>
+    <div id="cert-content" class="cert-modal-body"></div>
+  </dialog>
+
+  <!-- ORGANIZER HOST INSIGHTS & REACH ANALYTICS DIALOG -->
+  <dialog id="host-dialog" class="event-dialog organizer-dialog">
+    <div class="dialog-heading">
+      <div>
+        <p class="eyebrow">ORGANIZER REACH & CONVERSION ANALYTICS</p>
+        <h2>Host <span>Insights.</span></h2>
+      </div>
+      <button type="button" class="close-dialog" id="close-host-dialog" aria-label="Close">×</button>
+    </div>
+    <div id="host-content" class="host-modal-body"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
