@@ -1,0 +1,6 @@
+{
+  "name": "Eventora — Discover What's Happening Around You",
+  "description": "Discover nearby hackathons, workshops, college festivals, and tech meetups in Navi Mumbai, Mumbai, Panvel, and online with AI Smart Match recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
